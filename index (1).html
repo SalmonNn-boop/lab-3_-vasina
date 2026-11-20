@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пользователи и публикации</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Справочник пользователей</h1>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="search-field">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Имя пользователя"
+        >
+      </div>
+	  <button id="loadUsersBtn" class="btn btn-primary" type="button">
+        Загрузить пользователей
+      </button>
+    </section>
+
+    <div id="statusMessage" class="status" role="status" aria-live="polite"></div>
+
+    <section class="panel">
+      <h2 class="panel__title">Список пользователей</h2>
+      <div id="usersList" class="users-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel__title">Список публикаций</h2>
+      <div id="postsArea" class="posts-area">
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
